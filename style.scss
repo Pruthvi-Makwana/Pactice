@@ -1,0 +1,1189 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700;900&display=swap');
+$font:'Source Sans Pro';
+body {
+	font-family: $font;
+	font-weight: 400; 
+    font-size: 18px;
+    line-height: 24px;
+    color: #000;
+    margin: 0;
+	
+}
+p{
+    font-family: $font;
+	font-weight: 400; 
+    font-size: 18px;
+    line-height: 24px;
+    color: #000; 
+}
+h1,h2,h3,h4,h5,h6
+{ font-family: $font; 
+  font-weight: 300;
+  color: #000;
+}
+*, :before, :after {
+	box-sizing: border-box;
+}
+a {
+    outline: none !important;
+    text-decoration: none;
+    color: #000000;
+    &:hover{
+        color: #79973B;
+    }
+}
+img{
+    max-width: 100%;
+    vertical-align: top;
+}
+.button{
+    background-color:#000000;
+    color:#ffffff;
+    line-height:20px;
+    font-size:16px;
+    border-radius:0px;
+    outline:none;
+    text-transform: uppercase;
+    font-family: $font;
+    letter-spacing: 0.8px;
+    margin:0;
+    border: 1px solid #FFFFFF;
+    font-weight: 400;
+    text-align: center;
+    &:hover{
+        background-color:#999999;
+        color:#000000;
+    }
+}
+.container{
+    max-width: 1322px;
+    margin: 0 auto;
+    padding: 0;
+}
+.heading_text{
+    text-align: center;
+    font-weight: 300;
+    font-size: 40px;
+    line-height: 40px;
+    letter-spacing: 0.8px;
+}
+.header{
+    float: left;
+    width: 100%;
+    .top_header{
+        float: left;
+        width: 100%;
+        background-color: #000000;
+        text-align: center;
+        line-height: 20px;
+        font-size: 16px;
+        letter-spacing: 0.8px;
+        color: #FFFFFF;
+        text-transform: uppercase;
+        padding: 9px 0 10px;
+    }
+    .header_bottom{
+        float: left;
+        width: 100%;
+        padding: 19px 24px 18px 58px;
+        .nav-menu{
+            float: left;
+            width: 15%;
+            margin: 10px 0 0 0;
+            position: relative;
+            &:hover{
+                .sub-menu{
+                    display: block;
+                }
+            }
+        }
+        .menu{
+            font-size: 16px;
+            line-height: 16px;
+            letter-spacing: 0.32px;
+            text-transform: uppercase;
+            &:hover{
+                .menu-txt{
+                    color: #79973B;
+                }
+            }
+        }
+        .menu-icon{
+            svg{
+                margin: 0 0 5px 0;
+                path{
+                    fill: #79973B;
+                }
+            }
+        }
+        .sub-menu{
+            position: absolute;
+            top: 49px;
+            left: 0;
+            background-color: #000;
+            z-index: 9;
+            padding: 28px 50px 57px;
+            // width: 100%;
+            display: none;
+            ul{
+                margin: 0;
+                padding: 0;
+                list-style: none;
+            }
+            li{
+                &:nth-child(4){
+                    margin: 25px 0 0 0;
+                }
+                &:nth-child(9){
+                    margin: 25px 0 0 0; 
+                }
+            }
+            a{
+                font-size: 16px;
+                line-height: 16px;
+                letter-spacing: 0.32px;
+                color: #CCCCCC;
+                text-transform: uppercase;
+                &:hover{
+                    color: #FFFFFF;
+                }
+            }
+        }
+        .middle-logo{
+            text-align: center;
+            width: 70%;
+            margin: 0;
+            display: inline-block;
+            a{
+                text-align: center;
+                font-size: 40px;
+                line-height: 40px;
+                letter-spacing: 0.8px;
+            }
+        }
+        .rt-icon{
+            float: right;
+            margin: 3px 0 0 0;
+            padding: 0;
+            width: auto;
+            list-style: none;
+            li{
+                float: left;
+                width: auto;
+                padding: 0 8px;
+                a{
+                    &:hover{
+                        svg{
+                            path{
+                                stroke: #79973B;
+                            }
+                            .c-search{
+                                stroke: #79973B;
+                            }
+                            .c-acount{
+                                stroke: #79973B;
+                            }
+                            .c-cart{
+                                stroke: #79973B; 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.banner{
+    float: left;
+    width: 100%;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .banner-text{
+        position: absolute;
+        top:0;
+        left: 0;
+        right: 0;
+        text-align: center;
+        margin: 0;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        ul{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            width: 100%;
+        }
+        li{
+            float: left;
+            width: 33.33%;
+            .medaled{
+                display: none;
+                height: 195px;
+                p{
+                    line-height: 23px;
+                    letter-spacing: 1.8px;
+                    color: #000000;
+                    text-transform: uppercase;
+                    max-width: 257px;
+                    margin: 17px auto 19px;
+                    position: relative;
+                    z-index: 9;
+                }
+                .learn-btn{
+                    display: block;
+                }
+                .button{
+                    display: inline-block;
+                    padding: 7px 35px;
+                    margin: 0 0 8px 0;
+                }
+            }
+            &:hover{
+                svg{
+                    position: relative;
+                    z-index: 9;
+                    path{
+                        fill: #000;
+                    }
+                }
+                &::before{
+                    background: rgba(255, 255, 255, 0.8);
+                    content: "";
+                    position: absolute;
+                    width: 100%;
+                    height: 100%;
+                    top: 0;
+                    left: 0;
+                    z-index: 0;
+                    border-right: 1px solid #999999;
+                }
+                .medaled{
+                    display: block;
+                }
+            }
+            a{
+                display: block;
+                position: relative;
+            }
+        }
+    }
+}
+.family{
+    float: left;
+    width: 100%;
+    padding: 28px 0 0 0;
+    .container{
+        max-width: 868px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    li{
+        float: left;
+        width: auto;
+        text-align: center;
+    }
+    .family-txt{
+        font-size: 16px;
+        line-height: 16px;
+        letter-spacing: 1.6px;
+        color: #79973B;
+        text-transform: uppercase;
+        display: block;
+        margin: 2px 0 0 0;
+    }
+    .family-icon{
+        display: block;
+        svg{
+        height: 120px;
+        }
+    }
+}
+.better-family{
+    float: left;
+    width: 100%;
+    position: relative;
+    margin: 40px 0 0 0;
+    img{
+        width: 100%;
+    }
+    .about-us{
+        left: 0;
+        right: 0;
+        position: absolute;
+        bottom: 56px;
+    }
+    .lf-certificate{
+        position: absolute;
+        left: 63px;
+        bottom: 105px;
+    }
+    .better-class{
+        max-width: 622px;
+        margin: 0 auto;
+        background-color: rgba(255, 255, 255, 0.6);
+        text-align: center;
+        padding: 41px 25px 52px;
+    }
+    .heading_text{
+        margin: 0;
+    }
+    p{
+        letter-spacing: 0.36px;
+        max-width: 476px;
+        margin: 17px auto 35px;
+    }
+    .button{
+        padding: 9px 45px 11px;
+        display: inline-block;
+    }
+    .rt-certificate{
+        position: absolute;
+        right: 71px;
+        bottom: 105px;
+    }
+}
+.join-club{
+    float: left;
+    width: 100%;
+    margin: 31px 0 50px 0;
+    position: relative;
+    img{
+        width: 100%;
+    }
+    .lf_simple{
+        background-color: rgba(255, 255, 255, 0.7);
+        padding: 41px 0 80px 0;
+    }
+    .rt_simple{
+        background-color: rgba(255, 255, 255, 0.7);
+        border-left: 2px solid #999999;
+        margin: 64px 0 0 0;
+        padding: 41px 0 0 0;
+    }
+    .club-text{
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        max-width: 749px;
+        margin: 0 auto;
+    }
+    .simple{
+        text-align: left;
+        font-size: 28px;
+        line-height: 36px;
+        font-weight: 400;
+        letter-spacing: 1.4px;
+        text-transform: uppercase;
+    }
+    .button{
+        border: 0;
+        padding: 8px 82px 11px;
+        font-size: 36px;
+        line-height: 45px;
+        letter-spacing: 0.72px;
+        display: inline-block;
+        text-transform: capitalize;
+        font-weight: 300;
+        &:hover{
+            color: #fff;
+        }
+    }
+    .enjoy{
+        text-align: center;
+        p{
+            font-size:24px;
+            line-height: 28px;
+            letter-spacing: 0.48px;
+            color: #FFFFFF;
+            margin: 0;
+            max-width: 310px;
+            display: inline-block;
+        }
+    }
+    .lf-text{
+        float: left;
+        width: 59%;
+        ul{
+            margin: 0;
+            padding: 12px 0 0 37px;
+            list-style: none;
+            li{
+                font-size: 36px;
+                line-height: 45px;
+                letter-spacing: 0.72px;
+                color: #000000;
+                font-weight: 300;
+                padding: 0 0 10px 0;
+                span{
+                    background-color: #79973B;
+                    padding:0 11.25px;
+                    border-radius: 50px;
+                    font-size: 30px;
+                    line-height: 40px;
+                    letter-spacing: 0.6px;
+                    color: #FFFFFF;
+                    margin: 0 10px 0 0;
+                }
+            }
+        }
+        .simple{
+            margin: 0 0 0 88px;
+        }
+    }
+    .rt-text{
+        float: left;
+        width: 41%;
+        ul{
+            margin: 0;
+            padding: 16px 0 25px 40px;
+        }
+        li{
+            font-size: 22px;
+            line-height: 36px;
+            letter-spacing: 0.44px;
+            color: #333333;
+            &::marker{
+                color: #79973B;
+            }
+        }
+        .simple{
+            margin: 0 0 0 26px;
+        }
+    }
+    .join-btn{
+        float: right;
+    }
+}
+.gift-ideas{
+    float: left;
+    width: 100%;
+    padding: 55px 0 50px 0;
+    .container{
+        max-width: 1264px;
+    }
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li{
+        float: left;
+        width: 33.33%;
+        text-align: center;
+    }
+    .gift-img{
+        height: 291px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .heading_text{
+        margin: 0 0 25px 0;
+    }
+    .button{
+        padding: 9px 20px 9px;
+        display: inline-block;
+        margin: 18px 0 0 0;
+    }
+}
+.recipes{
+    float: left;
+    width: 100%;
+    text-align: center;
+    padding: 63px 0 56px 0;
+    .container{
+        max-width: 1324px;
+    }
+    .heading_text{
+        margin: 0;
+    }
+    ul{
+        margin: 56px -20.5px 50px;
+        padding: 0;
+        list-style: none;
+        display: inline-block;
+    }
+    li{
+        float: left;
+        width: 25%;
+        padding: 0 20.5px;
+        img{
+            width: 100%;
+        }
+    }
+    h4{ 
+        text-align: left;
+        font-size: 26px;
+        line-height: 40px;
+        letter-spacing: 0.52px;
+        margin: 15px 0 8px 0;
+    }
+    p{
+        font-size: 18px;
+        letter-spacing: 0.36px;
+        margin: 0;
+        text-align: left;
+        a{
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+    }
+    .button{
+        padding: 8px 51px 10px;
+        display: inline-block;
+    }
+}
+.invitation{
+    float: left;
+    width: 100%;
+    padding: 56px 0 77px 0;
+    ul{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        display: flex;
+        align-items: center;
+    }
+    li{
+        float: left;
+        width: 33.33%;
+        text-align: center;
+        img{
+            width: 100%;
+        }
+    }
+    .heading_text{
+        margin: 0 auto;
+        max-width: 233px;
+
+    }
+    .button{
+        padding: 9px 25px 10px;
+        display: inline-block;
+    }
+    p{
+        letter-spacing: 0.36px;
+        margin: 15px 0 30px 0;
+    }
+    .test{
+        padding:0 30px 0;
+    }
+}
+.footer{
+    float: left;
+    width: 100%;
+    .newsletter{
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 0 0 65px 0;
+        .heading_text{
+            margin: 0;
+        }
+        p{
+            margin: 5px 0 34px 0;
+            letter-spacing: 0.36px;
+            color: #000;
+        }
+        .mail{
+            outline: none;
+            border: 1px solid #CCCCCC;
+            padding: 8px 16px 9px 12px;
+            width: 293px;
+            font-size: 18px;
+            line-height: 24px;
+            font-family: $font;
+            letter-spacing: 0.36px;
+            color: #999999;
+            margin: 0 7px 0 0;
+        }
+        .button{
+            padding: 10px 38px 11px;
+            color: #fff;
+            &:hover{
+                color: #000;
+            }
+        }
+    }
+    .bottom-footer{
+        float: left;
+        width: 100%;
+        background-color: #000000;
+        padding: 64px 0 76px 0;
+        .container{
+            max-width: 1174px;
+        }
+    }
+    .footer-col{
+        width: 20.5%;
+        float: left;
+        padding-right: 15px;
+        &.footer-col-5{
+            width: 18%;
+        }
+    }
+    .footer-heading{
+        font-size: 24px;
+        line-height: 28px;
+        letter-spacing: 0.48px;
+        color: #FFFFFF;
+        margin: 0 0 12px 0;
+    }
+    .links{
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a{
+            font-size: 16px;
+            letter-spacing: 0.32px;
+            color: #CCCCCC;
+            &:hover{
+                color: #79973B;
+            }
+        }
+    }
+    address{
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        color: #CCCCCC;
+        font-style: normal;
+        padding: 0 25px 0 0;
+    }
+    p{
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        color: #CCCCCC;
+        margin: 24px 52px 24px 0;
+    }
+    a{
+        font-size: 16px;
+        letter-spacing: 0.32px;
+        color: #CCCCCC;
+        &:hover{
+            color: #79973B;
+        }
+    }
+    .cards{
+        float: left;
+        width: 100%;
+        text-align: center;
+        padding: 65px 0 0 0;
+        img{
+            padding: 0 3px;
+        }
+        p{
+            margin: 15px 0 0 0;
+            font-size: 14px;
+            letter-spacing: 0.28px;
+            color: #CCCCCC;
+            br{
+                display: none;
+            }
+        }
+    }
+}
+@media only screen and (max-width:1499px) {
+    .better-family{
+        background: url(../images/family-banner.png)no-repeat;
+        background-size: 100% 100%;
+        padding: 355px 0 67px 0;
+        > img{
+            display: none;
+        }
+        .better-family{
+            position: initial;
+        }
+        .better-class{
+            position: initial;
+        }
+    }
+    // .join-club{
+    //     background: url(../images/club-banner.png)no-repeat center;
+    //     background: 100% 100%;
+    //     padding: 90px 0 90px 0;
+    //     > img{
+    //         display: none;
+    //     }
+    //     .club-text{
+    //         position: initial;
+    //         transform: none;
+    //     }
+
+    // }
+}
+@media only screen and (max-width:1199px){
+    .container{
+        padding: 0 15px;
+    }
+    .header .header_bottom {
+        padding: 10px 15px 10px 15px;
+    }
+    .header .header_bottom .middle-logo a {
+        font-size: 28px;
+    }
+    .better-family {
+        padding: 210px 0 0 0;
+    }
+    .better-family .about-us {
+        position: inherit;
+    }
+    .better-family .lf-certificate {
+        left: 40px;
+    }
+    .better-family .rt-certificate {
+        right: 40px;
+    }
+    .better-family .better-class {
+        padding: 20px 25px 32px;
+    }
+    .better-family p {
+        margin: 5px auto 22px;
+    }
+    .heading_text {
+        font-size: 30px;
+    }
+    .join-club {
+        margin: 31px 0 20px 0;
+    }
+    .join-club .simple {
+        font-size: 24px;
+    }
+    .join-club .rt_simple {
+        margin: 89px 0 0 0;
+    }
+    .join-club .lf-text {
+        padding: 25px 0 0 0;
+    }
+    .join-club .lf-text ul {
+        padding: 5px 0 0 37px;
+    }
+    .join-club .lf-text ul li span {
+        font-size: 22px;
+    }
+    .join-club .lf-text ul li {
+        font-size: 25px;
+        line-height: 30px;
+        padding: 0;
+    }
+    .join-club .rt-text ul {
+        padding: 0 0 25px 30px;
+    }
+    .join-club .rt-text li {
+        font-size: 20px;
+        line-height: 29px;
+    }
+    .gift-ideas {
+        padding: 25px 0 20px 0;
+    }
+    .gift-ideas .heading_text {
+        margin: 0 0 8px 0;
+        font-size: 24px;
+    }
+    .recipes {
+        padding: 20px 0 30px 0;
+    }
+    .recipes ul {
+        margin: 20px 0 20px 0;
+    }
+    .recipes li {
+        padding: 0 10px;
+    }
+    .recipes h4 {
+        font-size: 20px;
+        margin: 0 0 0px 0;
+    }
+    .recipes p {
+        font-size: 16px;
+    }
+    .invitation {
+        padding: 25px 0 50px 0;
+    }
+    .invitation .test {
+        padding: 0 30px 0;
+    }
+    .invitation .heading_text {
+       line-height: 32px;
+    }
+    .invitation p {
+        margin: 5px 0 15px 0;
+    }
+    .footer .newsletter p {
+        margin: 5px 0 20px 0;
+    }
+    .footer .newsletter {
+        padding: 0 0 50px 0;
+    }
+    .footer .bottom-footer {
+        padding: 30px 0 35px 0;
+    }
+    footer .footer-heading {
+        font-size: 20px;
+        line-height: 22px;
+        margin: 0 0 5px 0;
+    }
+    .footer .cards {
+        padding: 30px 0 0 0;
+    }
+}
+@media only screen and (max-width:991px){
+    .header .header_bottom .middle-logo {
+        width: 61%;
+    }
+    .banner .banner-text li svg{
+        width: 132px;
+    }
+    .gift-ideas .gift-img {
+        height: 205px;
+    }  
+    .better-family {
+        padding: 71px 0 0 0;
+    }
+    .better-family .better-class {
+        max-width: 500px;
+    }  
+    .better-family .about-us {
+        bottom: 30px;
+        position: inherit;
+    }
+    .better-family .lf-certificate {
+        left: 0;
+        right: 0;
+        text-align: center;
+        top: -20px;
+        position: inherit;
+    }
+    .better-family .lf-certificate img{
+        width: unset;
+    }
+    .better-family .rt-certificate {
+        left: 0;
+        right: 0;
+        bottom: -17px;
+        text-align: center;
+        position: inherit;
+    }  
+    .better-family .rt-certificate img{
+        width: unset;
+    }  
+    .recipes li {
+        width: 33.33%;
+    }
+    .recipes li:last-child{
+        clear: both;
+        float: none;
+        margin: 0 auto;
+        padding: 25px 0 0 0;
+    }
+    .join-club .club-text {
+        max-width: 581px;
+    }
+    .join-club .button {
+        padding: 8px 47px 11px;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .join-club .lf_simple {
+        padding: 21px 0 33px 0;
+    }
+    .join-club .rt_simple {
+        margin: 72px 0 0 0;
+        padding: 22px 0 0 0;
+    }
+    .join-club .rt-text li {
+        font-size: 17px;
+        line-height: 22px;
+    }
+    .join-club .enjoy p {
+        font-size: 22px;
+        line-height: 24px;
+    }
+    .invitation .heading_text {
+        font-size: 20px;
+        line-height: 24px;
+    }
+    .invitation p {
+        font-size: 14px;
+        line-height: 19px;
+    }
+    .invitation .button {
+        padding: 7px 8px 8px;
+    }
+    .footer .newsletter {
+       padding: 0 0 35px;
+    }
+    .footer .footer-col {
+        width: 33.33%;
+        float: left;
+    }
+}
+@media only screen and (max-width:767px){
+    .header .header_bottom .middle-logo {
+        width: 62%;
+    }
+    .header .header_bottom .middle-logo a {
+        font-size: 22px;
+    }
+    .rt-icon li svg{
+        width: 25px;
+        height: 25px;
+    }
+    .header .header_bottom .menu {
+        font-size: 13px;
+    }
+    .header .header_bottom .rt-icon li {
+        padding: 0 6px;
+    }
+    .family ul {
+        display: block;
+    }
+    .family li {
+        width: 33.33%;
+    }
+    .family li:last-child{
+        clear: both;
+        padding: 30px 0 0 0;
+        float: none;
+        margin: 0 auto;
+    }
+    .family .family-txt {
+        font-size: 13px;
+    }
+    .better-family .better-class {
+        bottom: 99px;
+        padding: 11px 25px 19px;
+    }
+    .better-family p {
+        font-size: 16px;
+        margin: 5px auto 5px;
+    }
+    .better-family .rt-certificate img {
+        width: 82px;
+    }
+    .better-family .lf-certificate img{
+        width: 82px;
+    }
+    .join-club .club-text {
+        position: inherit;
+        padding: 0 15px;
+    }
+    .join-club .lf-text {
+        padding: 11px 0 0 0;
+        width: 100%;
+    }
+    .join-club .lf_simple {
+        padding: 20px 0 15px 0;
+    }
+    .join-club .enjoy p {
+        color: #000;
+        font-size: 16px;
+    }
+    .join-club .rt-text {
+        width: 100%;
+        border-top: 2px solid #999999;
+        padding-top: 0;
+        margin: 15px 0 0 0;
+    }
+    .join-club .lf-text ul li {
+        font-size: 20px;
+        line-height: 23px;
+    }
+    .join-club .rt-text {
+        padding: 9px 0 5px 3px;
+    }
+    .join-club .rt-text li {
+        font-size: 18px;
+        line-height: 26px;
+    }
+    .join-club .rt_simple {
+        margin: 0;
+        padding: 15px 0 0 0;
+        border: 0;
+    }
+    .gift-ideas li {
+        width: 50%;
+    }
+    .gift-ideas .gift-img {
+        height: 245px;
+    }
+    .gift-ideas li:last-child{
+        margin: 0 auto;
+        clear: both;
+        float: none;
+        padding: 30px 0 0 0;
+    }
+    .gift-ideas li:last-child .gift-img{
+        height: 161px;
+    }
+    .recipes li {
+        width: 50%;
+    }
+    .recipes li:nth-child(3){
+        padding-top: 25px;  
+    }
+    .recipes li:last-child {
+        clear:none;
+        float: left;
+        padding: 25px 10px 0;
+    }
+    .invitation .heading_text {
+        max-width: 100%;
+        font-size: 25px;
+        line-height: 28px;
+    }
+    .invitation .test {
+        padding: 20px 30px 0;
+    }
+    .invitation ul {
+        display: block;
+    }
+    .invitation li {
+        width: 100%;
+    }
+    .invitation li:last-child{
+        clear: both;
+        margin: 0 auto;
+        float: none;
+        padding: 25px 0 0 0;
+    }
+    .footer p {
+        margin: 24px 57px 24px 0;
+    }
+    .footer address {
+        padding: 0 0 0 0;
+    }
+    .footer .footer-col.footer-col-5 {
+        width: 40%;
+    }
+}
+@media only screen and (max-width:479px){
+    .container{
+        padding: 0 25px;
+    }
+    .header .header_bottom {
+        position: relative;
+    }
+    .header .header_bottom .middle-logo {
+        position: absolute;
+        width: 100%;
+        text-align: center;
+        left: 0;
+    }
+    .header .header_bottom .middle-logo a {
+        font-size: 24px;
+        line-height: 26px;
+    }
+    .header .header_bottom .nav-menu {
+        margin: 80px 0 0 0;
+        width: 21%;
+    }
+    .header .header_bottom .menu-icon svg {
+        margin: 0 0 5px 6px;
+    }
+    .header .header_bottom .rt-icon {
+        margin: 75px 0 0 0;
+    }
+    .header .top_header {
+        font-size: 16px;
+        line-height: 24px;
+        padding: 9px 25px 10px;
+    }
+    .banner .banner-text li svg {
+        width: 83px;
+    }
+    .better-family {
+        background: none;
+        padding: 0;
+    }
+    .better-family img{
+        display: block;
+    }
+    .better-family .about-us {
+        bottom: 0;
+    }
+    .better-family .lf-certificate {
+        top: 0;
+    }
+    .better-family .lf-certificate img {
+        width: unset;
+        margin: 0 auto; 
+    }
+    .better-family .rt-certificate {
+        bottom: 0;
+    }
+    .better-family .rt-certificate img {
+        width: unset;
+        margin: 0 auto;
+    }
+    .family li {
+        width: 100%;
+    }
+    .join-club {
+        margin: 60px 0 20px 0;
+    }
+    .join-club .club-text {
+        padding: 0 25px;
+    }
+    .join-club .lf-text {
+        width: 100%;
+    }
+    .join-club .button {
+        width: 100%;
+    }   
+    .join-club .join-btn {
+        float: none;
+    }
+    .gift-ideas li {
+        width: 100%;
+    }
+    .gift-ideas .button {
+        width: 100%;
+    }
+    .recipes li {
+        width: 100%;
+        padding: 0;
+    }
+    .recipes li:first-child {
+        padding-bottom: 25px;
+    }
+    .invitation li {
+        width: 100%;
+    }
+    .invitation .button {
+        width: 100%;
+    }
+    .invitation p {
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .footer .newsletter .mail {
+        width: 100%;
+        margin: 0 0 10px 0;
+    }
+    .footer .newsletter .button {
+        display: inline-block;
+        width: 100%;
+    }
+    .footer .footer-col {
+        width: 100%;
+        padding: 0 0 25px 0;
+    }
+    .footer .footer-col.footer-col-5 {
+        width: 100%;
+    }
+    .footer .footer-heading {
+        margin: 0 0 6px 0;
+    }
+    
+}
